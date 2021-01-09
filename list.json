@@ -1,34 +1,24 @@
-[
-  {
-    id: "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
-    title: "First Item",
-    uri: "http://download788.mediafire.com/a63g5hym0xkg/jvspvl5ii2owm3q/sample_960x540.mkv",
-  },
-  {
-    id: "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
-    title: "Second Item",
-    uri: "http://download788.mediafire.com/a63g5hym0xkg/jvspvl5ii2owm3q/sample_960x540.mkv",
-  },
-  {
-    id: "58694a0f-3da1-471f-bd96-145571e29d72",
-    title: "Third Item",
-    uri: "http://download788.mediafire.com/a63g5hym0xkg/jvspvl5ii2owm3q/sample_960x540.mkv",
-  },
-  {
-    id: "58694a0f-3da1-471f-bd96-145571e29d72",
-    title: "fourt item",
-    uri: "http://download788.mediafire.com/a63g5hym0xkg/jvspvl5ii2owm3q/sample_960x540.mkv",
-  },{
-    id: "58694a0f-3da1-471f-bd96-145571e29d72",
-    title: "Third Item",
-    uri: "http://download788.mediafire.com/a63g5hym0xkg/jvspvl5ii2owm3q/sample_960x540.mkv",
-  },{
-    id: "58694a0f-3da1-471f-bd96-145571e29d72",
-    title: "Third Item",
-    uri: "http://download788.mediafire.com/a63g5hym0xkg/jvspvl5ii2owm3q/sample_960x540.mkv",
-  },{
-    id: "58694a0f-3da1-471f-bd96-145571e29d72",
-    title: "Third Item",
-    uri: "http://download788.mediafire.com/a63g5hym0xkg/jvspvl5ii2owm3q/sample_960x540.mkv",
-  },
-]
+{
+  "blogposts": [
+    {
+      "title": "API POST #11111111",
+      "content": "content for my post",
+      "id": 1
+    },
+    {
+      "title": "Newly created API post",
+      "content": "Some content",
+      "id": 2
+    },
+    {
+      "title": "Third post creation",
+      "content": "Asdofjl",
+      "id": 3
+    },
+    {
+      "title": "Updated blog post #4",
+      "content": "Alskdjlkdf",
+      "id": 4
+    }
+  ]
+}
