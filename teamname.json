@@ -1,10 +1,5 @@
-[
-   {
-      "teamm":[
-         {
-            "teamA":"SUNRIZER",
-            "teamB":"BABARAMDEV"
-         }
-      ]
-   }
-]
+[{
+
+	"teamA": "SUNRIZER",
+	"teamB": "BABARAMDEV"
+}]
