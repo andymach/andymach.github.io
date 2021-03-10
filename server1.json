@@ -1,12 +1,12 @@
 [
  {
-	"key": "360p",
-	"name": "server2",
+	"key": "1",
+	"name": "360p",
 	"uri": "http://download788.mediafire.com/a63g5hym0xkg/jvspvl5ii2owm3q/sample_960x540.mkv"
   },
   {
-	"key": "480p",
-	"name": "httpfast",
+	"key": "2",
+	"name": "481p",
 "uri": "http://download788.mediafire.com/a63g5hym0xkg/jvspvl5ii2owm3q/sample_960x540.mkv"
 }
   
