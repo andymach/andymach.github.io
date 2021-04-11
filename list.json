@@ -1,12 +1,12 @@
  [{
  		"id": "1",
  		"title": "First Item",
- 		"uri": "http://download788.mediafire.com/a63g5hym0xkg/jvspvl5ii2owm3q/sample_960x540.mkv"
+ 		"uri": "https://i.ibb.co/4NC2Qh7/e0c98d845a3a0fa87d68ea6b76b01d2c.jpg"
  	},
  	{
  		"id": "2",
  		"title": "Second Item",
- 		"uri": "http://download788.mediafire.com/a63g5hym0xkg/jvspvl5ii2owm3q/sample_960x540.mkv"
+ 		"uri": "https://i.ibb.co/KcPB1jz/download-1.jpg"
  	},
  	{
  		"id": "3",
@@ -16,18 +16,6 @@
  	{
  		"id": "4",
  		"title": "fourt item",
- 		"uri": "http://download788.mediafire.com/a63g5hym0xkg/jvspvl5ii2owm3q/sample_960x540.mkv"
- 	}, {
- 		"id": "5",
- 		"title": "Third Item",
- 		"uri": "http://download788.mediafire.com/a63g5hym0xkg/jvspvl5ii2owm3q/sample_960x540.mkv"
- 	}, {
- 		"id": "6",
- 		"title": "Third Item",
- 		"uri": "http://download788.mediafire.com/a63g5hym0xkg/jvspvl5ii2owm3q/sample_960x540.mkv"
- 	}, {
- 		"id": "7",
- 		"title": "Third Item",
  		"uri": "http://download788.mediafire.com/a63g5hym0xkg/jvspvl5ii2owm3q/sample_960x540.mkv"
  	}
  ]
