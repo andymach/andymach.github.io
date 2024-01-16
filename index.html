@@ -1,102 +1,157 @@
-<htmL>
-  <style>
-    .news-app-promo {
-  box-sizing: border-box;
-  background-color: rgb(78, 56, 114);
-  padding: 0.5em;
-  margin-top: 1em;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-.news-app-promo__section {
-  display: inline-block;
-  margin: 0 auto;
-  position: relative;
-  width: 100%;
-  text-align: center;
-  margin-top: 8px;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your App Showcase</title>
+    <style>
+        @font-face {
+            font-family: 'jaj';
+            /* Provide a unique name for your custom font */
+            src: url('man.otf') format('opentype');
+            /* Replace 'path/to/your/font.woff2' with the actual path to your font file */
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        body {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            /* 100% of viewport height */
+            background: radial-gradient(circle, #f91959 80%, #f4493e 40%);
+            /* Prevent scrolling beyond viewport */
+        }
+        
+        #v-container {
+            display: flex;
+            width: 300px;
+            height: 50vh;
+            align-self: start;
+        }
+        
+        .app-image {
+            max-width: 100%;
+            max-height: 50vh;
+            /* Adjust the maximum height as needed */
+            border-radius: 10px;
+            /* Optional: Rounded corners for the image */
+            position: absolute;
+            transform-origin: bottom center;
+            /* Set the rotation origin to the bottom center */
+            transition: transform 0.5s ease-in-out;
+            /* Add a smooth transition effect */
+        }
+        
+        .app-image.back {
+            transform: rotate(0deg) translateX(-20%);
+            /* Adjust the rotation angle and translation */
+        }
+        
+        .app-image.front {
+            transform: rotate(20deg) translateX(2.5%);
+            /* Adjust the rotation angle and translation */
+        }
+        
+        .app-image:hover {
+            transform: rotate(0);
+            /* Reset rotation on hover for a dynamic effect */
+        }
+        
+        #svg-image {
+            width: 70px;
+            /* top: 55%; */
+            height: auto;
+            left: 10%;
+            position: absolute;
+            bottom: 0;
+            /* Align the bottom of the SVG image to the bottom of the container */
+        }
+        
+        .circle-background {
+            width: 80px;
+            height: 80px;
+            top: 54%;
+            background-color: black;
+            border-radius: 50%;
+            position: absolute;
+            left: 30%;
+            bottom: 0;
+        }
+        
+        #app-description {
+            position: absolute;
+            top: 87%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #6b4b4e;
+            font-size: 40px;
+            font-family: 'jaj', sans-serif;
+        }
+        
+        #extra-image {
+            width: 150px;
+            top: 50%;
+            /* Adjust width as needed */
+            height: auto;
+            /* Maintain aspect ratio */
+            position: absolute;
+            /* Align the bottom of the extra image to the bottom of the container */
+            left: 45%;
+            /* Adjust the left position to place it beside the SVG image */
+        }
+        
+        @media screen and (max-width: 480px) {
+            #svg-image {
+                width: 70px;
+                /* top: 55%; */
+                height: auto;
+                left: 10%;
+                position: absolute;
+                bottom: 0;
+                /* Align the bottom of the SVG image to the bottom of the container */
+            }
+            .circle-background {
+                width: 80px;
+                height: 80px;
+                top: 52%;
+                background-color: black;
+                border-radius: 50%;
+                position: absolute;
+                left: 17%;
+                bottom: 0;
+            }
+            #extra-image {
+                width: 150px;
+                top: 48%;
+                height: auto;
+                /* Maintain aspect ratio */
+                position: absolute;
+                /* Align the bottom of the extra image to the bottom of the container */
+                left: 45%;
+                /* Adjust the left position to place it beside the SVG image */
+            }
+        }
+    </style>
+</head>
 
-.news-app-promo-text {
-  color: #fff;
-  font-family: helvetica;
-  min-width: 277px;
-  border-right: 0.25em solid #fff;
-  border-left: 0.25em solid #fff;
-  padding: 0 1em;
-  width: 35%;
-  margin: 1em auto;
-  display: block;
-}
+<body>
 
-.news-app-promo-text__tagline {
-  font-size: 1.09em;
-}
-
-.news-app-promo-text__download {
-  font-size: 2.25em;
-  font-weight: 600;
-}
-
-.news-app-promo-buttons {
-  margin: 0 auto;
-  max-width: 35%;
-  display: block;
-}
-
-.news-app-promo-buttons__buttons {
-  display: block;
-}
-
-.news-app-promo-buttons__logo {
-  display: inline-block;
-}
-
-.news-app-promo-subsection {
-  display: inline-block;
-  margin: 0 auto;
-  margin-right: 10px;
-}
-
-.news-app-promo__bbc-logo {
-  display: inline-block;
-  width: 106px;
-  margin-bottom: 8px;
-}
-
-.news-app-promo__play-store,
-.news-app-promo__app-store {
-  display: block;
-  width: 400px;
-  height: auto;
-  margin-bottom: 8px;
-}
-
-.news-app-promo-subsection--link {
-  text-decoration: none;
-  border: 0;
-}
-  </style>
-  <body>
-<div id="newsspec-19854-app" class="news-app-promo">
-    <div class="news-app-promo-text">
-        <div class="news-app-promo-text__tagline">The best and free way to watch ipl</div><br>
-        <div class="news-app-promo-text__download">Download the Ipltv App.</div>
+    <div id="v-container">
+        <img class="app-image back" src="mag.png" alt="Your App Screenshot 1">
+        <img class="app-image front" src="sec.png" alt="Your App Screenshot 2">
     </div>
-    <div class="news-app-promo__section">
-     
+    <div class="circle-background">
+        <img id="svg-image" src="hu1.svg" alt="Your SVG Image">
+    </div>
 
-      <img title="Mononton.png"  alt="66f5240a99acdf562d4e843b0e15553e">
-   
-        <div class="news-app-promo-subsection">
-            <a class="news-app-promo-subsection--link news-app-promo-subsection--playstore" href="https://play.google.com/store/apps/details?id=bbc.mobile.news.ww&amp;hl=en" target="_parent">
-                <img class="news-app-promo__play-store" src="https://news.files.bbci.co.uk/include/newsspec/19854/assets/app-project-assets/google_play_store.svg" width="90%" height="auto" border="0">
-            </a>
-           
-        </div>
-    </div>
-    <div class="news-app-promo__section">
-      
-    </div>
-</div>
-    </body>
-  </html>
+    <img id="extra-image" src="google-play-badge.svg" alt="Your Extra Image">
+    <p id="app-description">Introducing our cutting-edge Speech-to-Speech Voice Cloning App - a revolutionary tool that brings personalization and creativity to your audio experiences
+
+</body>
+
+</html>
