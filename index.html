@@ -33,7 +33,11 @@
             height: 50vh;
             align-self: start;
         }
-        
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+        }
         .app-image {
             max-width: 100%;
             max-height: 50vh;
@@ -148,7 +152,8 @@
 </head>
 
 <body>
-
+    <div class="container">
+<div>
     <div id="v-container">
         <img class="app-image back" src="https://i.ibb.co/9rzYBYT/mag.png" alt="Your App Screenshot 1">
         <img class="app-image front" src="https://i.ibb.co/nm7L2LS/sec.png" alt="Your App Screenshot 2">
@@ -159,7 +164,8 @@
 
     <img id="extra-image" src="google-play-badge.svg" alt="Your Extra Image">
     <p id="app-description">Introducing our cutting-edge Speech-to-Speech Voice Cloning App - a revolutionary tool that brings personalization and creativity to your audio experiences
-<div class="scrollable-div">
+</div>
+        <div class="scrollable-div">
         <h1>Privacy Policy</h1>
 <p>Last updated: June 21, 2024</p>
 <p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
@@ -297,6 +303,7 @@
 <li>By email: Tripathim9637@gmail.com</li>
 </ul>
 </div>
+    </div>
 </body>
 
 </html>
