@@ -105,6 +105,13 @@
             left: 45%;
             /* Adjust the left position to place it beside the SVG image */
         }
+        .scrollable-div {
+            height: 60vh; /* 60% of the viewport height */
+            width: 100vw; /* 100% of the viewport width */
+            overflow-y: auto; /* Enable vertical scrolling */
+            overflow-x: hidden; /* Disable horizontal scrolling */
+            border: 1px solid #000; /* Optional: Add a border for better visibility */
+        }
         
         @media screen and (max-width: 480px) {
             #svg-image {
@@ -152,7 +159,8 @@
 
     <img id="extra-image" src="google-play-badge.svg" alt="Your Extra Image">
     <p id="app-description">Introducing our cutting-edge Speech-to-Speech Voice Cloning App - a revolutionary tool that brings personalization and creativity to your audio experiences
-<h1>Privacy Policy</h1>
+<div class="scrollable-div">
+        <h1>Privacy Policy</h1>
 <p>Last updated: June 21, 2024</p>
 <p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
 <p>We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy. This Privacy Policy has been created with the help of the <a href="https://www.freeprivacypolicy.com/free-privacy-policy-generator/" target="_blank">Free Privacy Policy Generator</a>.</p>
@@ -288,6 +296,7 @@
 <ul>
 <li>By email: Tripathim9637@gmail.com</li>
 </ul>
+</div>
 </body>
 
 </html>
